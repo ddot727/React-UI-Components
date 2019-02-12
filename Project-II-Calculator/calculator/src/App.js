@@ -1,5 +1,5 @@
 import React from 'react';
-// import CalculatorDisplay from './components/DisplayComponents';
+import CalculatorDisplay from './components/DisplayComponents/CalculatorDisplay';
 import NumberButton from './components/ButtonComponents/NumberButton'
 import ActionButton from './components/ButtonComponents/ActionButton';
 
@@ -8,7 +8,7 @@ import './App.css';
 const App = () => {
   return (
     <div className = 'container'>
-      {/* <CalculatorDisplay /> */}
+      <CalculatorDisplay buttonStyle={'display'} text={0}/>
       <div className = 'buttons'>
         <div className = 'numbers'>
           <ActionButton buttonStyle={'action'} text={'clear'}/>
@@ -21,7 +21,7 @@ const App = () => {
           <NumberButton buttonStyle={'number'} text={1} />
           <NumberButton buttonStyle={'number'} text={2} />
           <NumberButton buttonStyle={'number'} text={3} />
-          <ActionButton buttonStyle={'action'} text={0}/>
+          <ActionButton buttonStyle={'action'} text={0} />
         </div>
         <div className='operator'>
           <NumberButton buttonStyle={'operator'} text='/' />
